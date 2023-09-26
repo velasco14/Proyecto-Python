@@ -46,16 +46,5 @@ inputUsuario.addEventListener('keydown', (event) => {
 });
 chatbotContainer.appendChild(inputUsuario);
 
-// Función para desplazarse suavemente a la sección "Abecedario" al hacer clic en el enlace
-function scrollToAbecedario() {
-    const abecedarioSection = document.getElementById('abecedario');
-    abecedarioSection.scrollIntoView({ behavior: 'smooth' });
-}
 
-// Asocia la función al evento click del enlace "Abecedario"
-const enlaceAbecedario = document.querySelector('.nav-link[href="#abecedario"]');
-enlaceAbecedario.addEventListener('click', (event) => {
-    event.preventDefault(); // Evita la navegación por defecto
-    scrollToAbecedario();
-});
 
