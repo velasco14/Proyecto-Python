@@ -1,0 +1,82 @@
+/* Estilos generales */
+body {
+    background-color: #000000;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: #007bff;
+    justify-content: center;
+    border: 3px solid #e67ea1;
+    border-radius: 10px;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0 5px #ff0055; /* Color del resplandor neon morado */
+    transition: text-shadow 0.3s ease-in-out; /* Transición suave del resplandor */
+}
+
+/* Efecto neon al pasar el ratón sobre los enlaces */
+.navbar-brand:hover, .navbar-nav .nav-link:hover {
+    text-shadow: 0 0 10px #ff0055, 0 0 20px #ff0055, 0 0 30px #ff0055; /* Efecto de resplandor brillante */
+}
+
+header {
+    text-align: center; /* Centra el contenido horizontalmente */
+    padding: 60px;
+}
+/* Estilos del contenedor principal */
+.main {
+    padding: 20px;
+}
+
+/* Estilos del contenedor del chatbot */
+/* Estilos del contenedor del chatbot */
+#chatbot-container {
+    width: 300px;
+    height: 345px;
+    background-color: #fafafabe;
+    border: 3px solid #ff0055; /* Color del borde morado */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Necesario para el efecto de brillo */
+}
+
+/* Estilo para el efecto de brillo */
+#chatbot-container::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 5px solid #af4fa7;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+/* Animación para el efecto de brillo */
+@keyframes neon {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Estilos para la sección de Lenguaje de Señas */
+#lenguaje-de-senas {
+    padding: 40px ;
+}
+
+#lenguaje-de-senas h2,p {
+    text-align: justify;
+    color: #ffffff;
+}
+
+.parrafo{
+    text-align: justify;
+}
