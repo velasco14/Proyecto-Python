@@ -1,82 +1,120 @@
-/* Estilos generales */
-body {
-    background-color: #000000;
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c';
+}
+/* Estilos para el h1 */
+.site-title {
+    text-align: center; /* Centra horizontalmente el h1 */
+    font-size: 36px; /* Ajusta el tamaño del texto según tus preferencias */
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.836); /* Espacio superior para separarlo de la barra de navegación */
 }
 
-/* Estilos de la barra de navegación */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff49;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.836);
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #ff0000d0;
+    color: #fff;
+    padding: 10px 0;
+}
+
 .navbar {
-    background-color: #007bff;
-    justify-content: center;
-    border: 3px solid #e67ea1;
-    border-radius: 10px;
+    margin-bottom: 0;
 }
 
-.navbar-brand, .navbar-nav .nav-link {
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.836);
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link {
     color: #fff;
     font-weight: bold;
-    text-shadow: 0 0 5px #ff0055; /* Color del resplandor neon morado */
-    transition: text-shadow 0.3s ease-in-out; /* Transición suave del resplandor */
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.836);
 }
 
-/* Efecto neon al pasar el ratón sobre los enlaces */
-.navbar-brand:hover, .navbar-nav .nav-link:hover {
-    text-shadow: 0 0 10px #ff0055, 0 0 20px #ff0055, 0 0 30px #ff0055; /* Efecto de resplandor brillante */
+.navbar-nav .nav-link:hover {
+    color: #0056b3;
 }
 
-header {
-    text-align: center; /* Centra el contenido horizontalmente */
-    padding: 60px;
-}
-/* Estilos del contenedor principal */
-.main {
-    padding: 20px;
+main{
+    background-image: url('/imagenes/img1.png'); 
+    background-size: cover;
+    background-position: center;
 }
 
-/* Estilos del contenedor del chatbot */
-/* Estilos del contenedor del chatbot */
+/* Estilos para la sección principal */
+main h2 {
+    color: #000000;
+    font-size: 24px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.836);
+}
+
+main p {
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+    text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.836);
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color:  #ffffff49;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilos para el chatbot */
 #chatbot-container {
-    width: 300px;
-    height: 345px;
-    background-color: #fafafabe;
-    border: 3px solid #ff0055; /* Color del borde morado */
+    background-color: #ffffff49;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative; /* Necesario para el efecto de brillo */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.726);
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.836);
 }
 
-/* Estilo para el efecto de brillo */
-#chatbot-container::after {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    border: 5px solid #af4fa7;
-    border-radius: 10px;
-    opacity: 0.7;
+/* Estilos para listas */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
-
-/* Animación para el efecto de brillo */
-@keyframes neon {
-    from {
-        opacity: 0.5;
-    }
-    to {
-        opacity: 1;
-    }
-}
-/* Estilos para la sección de Lenguaje de Señas */
-#lenguaje-de-senas {
-    padding: 40px ;
-}
-
-#lenguaje-de-senas h2,p {
-    text-align: justify;
+#limpiar-chat {
+    background-color: #ff0000;
     color: #ffffff;
-}
-
-.parrafo{
-    text-align: justify;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.836);
+    cursor: pointer;
 }

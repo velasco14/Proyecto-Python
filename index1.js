@@ -6,9 +6,11 @@ chatbotContainer.appendChild(chatbox);
 
 // Respuestas del chatbot
 const respuestas = {
-    "¿Cómo te puedo ayudar?": "Puedo ayudarte con cualquier pregunta que tengas.",
+    "Necesito ayuda": "Puedo ayudarte con cualquier pregunta que tengas.",
     "¿Qué necesitas?": "Necesito información específica para proporcionarte la ayuda adecuada.",
-    "Puedes ver mucha más información accediendo aquí": '<a href="https://www.ejemplo.com">Aquí está el enlace a más información.</a>'
+    "Quiero aprender lenguaje de señas": '<a href="https://www.youtube.com/watch?v=g1Yxx1PzSjg&ab_channel=Minders">Muy bien hemos encontrado este video espero te sea de mucha utilidad.</a>',
+    "Letra A en señas": '<img src="imagenes/letra a.jpg" alt=""> Esa es la letra A ¡Practicala!',
+    "Letra B en señas": '<img src="imagenes/letra b.jpg" alt=""> Esa es la letra B ¡Practicala!'
 };
 
 // Función para agregar un mensaje al chat
@@ -45,6 +47,13 @@ inputUsuario.addEventListener('keydown', (event) => {
     }
 });
 chatbotContainer.appendChild(inputUsuario);
+
+// Evento para limpiar el chat
+const botonLimpiar = document.getElementById('limpiar-chat');
+botonLimpiar.addEventListener('click', () => {
+    chatbox.innerHTML = ''; // Borra el contenido del chatbox
+});
+
 
 
 
